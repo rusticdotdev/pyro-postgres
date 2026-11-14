@@ -52,8 +52,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * pipelining ([69a2ad5](https://github.com/elbaro/pyro-postgres/commit/69a2ad538c83086784b78dbd0dedd36270ce7549))
 * query ([1c95dcc](https://github.com/elbaro/pyro-postgres/commit/1c95dcc8ddf78113a37fdada3f117502b5e29c41))
 
-## [Unreleased]
-
 ## [0.2.1](https://github.com/elbaro/pyro-postgres/releases/tag/v0.2.1) - 2025-12-28
 
 ### Added
