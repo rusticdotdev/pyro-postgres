@@ -2,7 +2,7 @@
 git_only = true
 git_tag_name = "v{{ version }}"
 semver_check = false
-release_commits = "^(feat|fix|refactor|perf|deps|revert)[(!:]"
+release_commits = "^(feat|fix|refactor|perf|deps|infra|revert)[(!:]"
 pr_name = "release: v{{ version }}"
 pr_labels = ["release"]
 pr_body = """
@@ -20,7 +20,7 @@ header = """# Changelog
 """
 commit_parsers = [
   { message = "^release", skip = true },
-  { message = "^infra", skip = true },
+  { message = "^infra", group = "<!-- hidden -->" },
   { message = "^deps", group = "<!-- hidden -->" },
   { message = "^feat", group = "<!-- 0 -->New features" },
   { message = "^fix", group = "<!-- 1 -->Bug fixes" },
